@@ -13,15 +13,15 @@ set statusline=%f\ %h%m%r%y%{fugitive#statusline()}%=%-10.(%l,%c%V%)\ %P
 set laststatus=2            " always show status line
 syntax enable               " enable syntax highlighting
 
-set directory=/tmp//        " put swap files in a central (non-wd) location
-set backupdir=/tmp//        " put backup file in a central (non-wd) location
+set directory=$TEMP//       " put swap files in a central (non-wd) location
+set backupdir=$TEMP//       " put backup file in a central (non-wd) location
 
 filetype off                " just for enabling pathogen
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 filetype plugin indent on   " automatically detect file type
 
-set guifont=FreeMono        " gvim only - use Consolas on Windows, FreeMono on Ubuntu
+set guifont=Consolas        " gvim only - use Consolas on Windows, FreeMono on Ubuntu
 set background=dark         " use the dark scheme
 colorscheme solarized       " set color scheme to solarized
 
