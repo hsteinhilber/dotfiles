@@ -1,9 +1,10 @@
-require 'redgreen'
+require 'redgreen/autotest'
 require 'autotest/timestamp'
+require 'autotest/growl'
  
-module Autotest::GnomeNotify
+module Autotest::Growl
   def self.notify title, msg, img
-    system "notify-send '#{title}' '#{msg}' -i #{img} -t 3000"
+    system "growl '#{title}' '#{msg}' -i #{img} -t 3000"
   end
  
   Autotest.add_hook :ran_command do |at|
