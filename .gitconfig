@@ -1,0 +1,17 @@
+[core]
+	symlinks = false
+	autocrlf = input
+[color]
+  ui = auto
+	diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+  grep = auto
+[help]
+	format = html
+[user]
+	name = "Harry Steinhilber, Jr."
+  email = "harry.steinhilber@gmail.com"
+[github]
+  user = hsteinhilber
