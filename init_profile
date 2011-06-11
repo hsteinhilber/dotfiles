@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+require 'fileutils'
+
+puts "WARNING: Removing .git folder"
+FileUtils.rm_rf '~/.git'
+
+puts "Updating VIM bundles"
+`~/.vim/update_bundles`
